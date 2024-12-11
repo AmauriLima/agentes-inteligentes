@@ -62,16 +62,16 @@ ambiente = Ambiente(largura=5, altura=5, posicao_objetivo=(4, 4), obstaculos=[(2
 
 Ao executar a simulação, você verá a seguinte saída no terminal, com o agente realizando as ações para alcançar o objetivo:
 
-    ```txt
-    Passo 1:
-      Percepção: {'posicao_agente': (0, 0), 'posicao_objetivo': (4, 4), 'obstaculos': [(2, 2), (3, 2), (1, 3)]}
-      Ação: direita
-    Passo 2:
-      Percepção: {'posicao_agente': (1, 0), ...}
-      Ação: baixo
-    ...
-    O agente alcançou o objetivo!
-    ```
+```
+Passo 1:
+  Percepção: {'posicao_agente': (0, 0), 'posicao_objetivo': (4, 4), 'obstaculos': [(2, 2), (3, 2), (1, 3)]}
+  Ação: direita
+Passo 2:
+  Percepção: {'posicao_agente': (1, 0), ...}
+  Ação: baixo
+...
+O agente alcançou o objetivo!
+```
 
 ## 👨‍🎓👨‍🎓👨‍🎓 Grupo
 
