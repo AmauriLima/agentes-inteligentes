@@ -36,9 +36,9 @@ O projeto é organizado em um package modular para facilitar a manutenção e ex
 
 3. Execute o arquivo main.py para iniciar a simulação:
 
-```bash
-python src/main.py
-```
+   ```bash
+   python src/main.py
+   ```
 
 4. O programa executará a simulação e imprimirá a sequência de ações do agente até que ele alcance o objetivo ou o número máximo de passos seja atingido.
 
@@ -53,10 +53,10 @@ O ambiente é configurado na classe Ambiente, onde você pode:
 
 Exemplo de personalização no arquivo ambiente.py:
 
-```python
-# Criar um ambiente de 5x5 com um objetivo na posição (4, 4)
-ambiente = Ambiente(largura=5, altura=5, posicao_objetivo=(4, 4), obstaculos=[(2, 2), (3, 2), (1, 3)])
-```
+    ```python
+    # Criar um ambiente de 5x5 com um objetivo na posição (4, 4)
+    ambiente = Ambiente(largura=5, altura=5, posicao_objetivo=(4, 4), obstaculos=[(2, 2), (3, 2), (1, 3)])
+    ```
 
 ## 📚 Exemplo de Saída
 
