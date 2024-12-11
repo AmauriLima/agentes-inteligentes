@@ -53,25 +53,25 @@ O ambiente é configurado na classe Ambiente, onde você pode:
 
 Exemplo de personalização no arquivo ambiente.py:
 
-    ```python
-    # Criar um ambiente de 5x5 com um objetivo na posição (4, 4)
-    ambiente = Ambiente(largura=5, altura=5, posicao_objetivo=(4, 4), obstaculos=[(2, 2), (3, 2), (1, 3)])
-    ```
+```py
+# Criar um ambiente de 5x5 com um objetivo na posição (4, 4)
+ambiente = Ambiente(largura=5, altura=5, posicao_objetivo=(4, 4), obstaculos=[(2, 2), (3, 2), (1, 3)])
+```
 
 ## 📚 Exemplo de Saída
 
 Ao executar a simulação, você verá a seguinte saída no terminal, com o agente realizando as ações para alcançar o objetivo:
 
-```text
-Passo 1:
-  Percepção: {'posicao_agente': (0, 0), 'posicao_objetivo': (4, 4), 'obstaculos': [(2, 2), (3, 2), (1, 3)]}
-  Ação: direita
-Passo 2:
-  Percepção: {'posicao_agente': (1, 0), ...}
-  Ação: baixo
-...
-O agente alcançou o objetivo!
-```
+    ```text
+    Passo 1:
+      Percepção: {'posicao_agente': (0, 0), 'posicao_objetivo': (4, 4), 'obstaculos': [(2, 2), (3, 2), (1, 3)]}
+      Ação: direita
+    Passo 2:
+      Percepção: {'posicao_agente': (1, 0), ...}
+      Ação: baixo
+    ...
+    O agente alcançou o objetivo!
+    ```
 
 ## 👨‍🎓👨‍🎓👨‍🎓 Grupo
 
