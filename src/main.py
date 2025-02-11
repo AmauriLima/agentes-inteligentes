@@ -9,24 +9,24 @@ Grupo: Amauri Lima, Huandrey Pontes, Eurico Gabriel
 Disciplina: Inteligência Artificial
 """
 
-from agente_inteligente.agente import Agente;
-from agente_inteligente.ambiente import Ambiente;
+from agente_inteligente.agente_objetivo import AgenteObjetivo
+from agente_inteligente.agente import Agente
+from agente_inteligente.ambiente import Ambiente
 
 # Simulação do Ambiente e do Agente
-def simular():
+def simular(agente):
     # Definição do ambiente
     largura, altura = 5, 5
     posicao_objetivo = (4, 4)
-    obstaculos = [(2, 2), (3, 2), (1, 3)]
+    obstaculos = []
     ambiente = Ambiente(largura, altura, posicao_objetivo, obstaculos)
 
     # Inicializar agente
     posicao_inicial = (0, 0)
     ambiente.inicializar_agente(posicao_inicial)
-    agente = Agente()
 
     # Executar simulação
-    passos_maximos = 20
+    passos_maximos = altura * largura
     for passo in range(passos_maximos):
         print(f"Passo {passo + 1}:")
         percepcao = ambiente.gerar_percepcao()
@@ -46,4 +46,13 @@ def simular():
 
 
 if __name__ == "__main__":
-    simular()
+    mensagem = "\nEscolha um agente inteligente: \n1. Agente Baseado em Modelo\n2. Agente Baseado em Objetivo\n-. Sair\n"
+    ent = input(mensagem)
+    while ent != "-":
+        if ent == "1" or ent == "2":
+            match ent:
+                case "1":
+                    simular(Agente())
+                case "2":
+                    simular(AgenteObjetivo())
+        ent = input(mensagem)

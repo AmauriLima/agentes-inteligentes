@@ -1,4 +1,4 @@
-import random;
+import random
 
 class Agente:
     def __init__(self):
