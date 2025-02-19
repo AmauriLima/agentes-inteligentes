@@ -35,6 +35,7 @@ class Ambiente:
             "posicao_agente": self.estado_agente,
             "posicao_objetivo": self.posicao_objetivo,
             "obstaculos": self.obstaculos,
+            "tamanho-bord": (self.largura, self.altura),
         }
 
     def objetivo_alcancado(self):
